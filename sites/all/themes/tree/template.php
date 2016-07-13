@@ -152,7 +152,7 @@ function tree_preprocess_views_view(&$variables) {
 
   
   elseif ($view->name == 'resources') {
-      drupal_add_js(drupal_get_path('theme', 'tree') . '/js/grids/tree.js', array(
+      drupal_add_js(drupal_get_path('theme', 'tree') . '/js/grids/resources.js', array(
        'type' => 'file',
        'group' => JS_THEME,
       ));
