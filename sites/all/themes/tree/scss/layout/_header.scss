@@ -10,7 +10,8 @@
   $landscape: "only screen and (orientation: landscape)";
   $portrait: "only screen and (orientation: portrait)";
 
-
+  @import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Lato:400,700|Montserrat:400,700|Nunito|Open+Sans:300,400';
+  
 
   
 
@@ -26,6 +27,13 @@
 .top-bar-section {}
 .top-bar-section .left {}
 .top-bar-section .right {}
+
+
+
+
+
+
+
 
 
 
@@ -213,6 +221,7 @@ header {
   
    a {
       text-transform: uppercase;
+	  font-family: "Nunito", sans-serif;
      }
   
 } 
