@@ -80,11 +80,14 @@ $em-base: 16px !default;
 
 // Various global styles
 
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Lato:400,700|Montserrat:400,700|Nunito|Open+Sans:300,400';
+
+
 $default-float: left;
 
  $body-bg: #fff;
  $body-font-color: #222;
- $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $body-font-family: "Open Sans", Arial, sans-serif;
  $body-font-weight: normal;
  $body-font-style: normal;
 
@@ -195,7 +198,7 @@ $default-float: left;
 
 // Control header font styles
 
- $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $header-font-family: "Montserrat", Arial, sans-serif;
  $header-font-weight: bold;
  $header-font-style: normal;
  $header-font-color: #222;
@@ -268,12 +271,12 @@ $default-float: left;
 
 // Style blockquotes
 
-// $blockquote-font-color: lighten($header-font-color, 30%);
-// $blockquote-padding: em-calc(9, 20, 0, 19);
-// $blockquote-border: 1px solid #ddd;
-// $blockquote-cite-font-size: em-calc(13);
-// $blockquote-cite-font-color: lighten($header-font-color, 20%);
-// $blockquote-cite-link-color: $blockquote-cite-font-color;
+  $blockquote-font-color: lighten($header-font-color, 30%);
+  $blockquote-padding: em-calc(9, 20);
+  $blockquote-border: 1px solid #ddd;
+  $blockquote-cite-font-size: em-calc(13);
+  $blockquote-cite-font-color: lighten($header-font-color, 20%);
+  $blockquote-cite-link-color: $blockquote-cite-font-color;
 
 // Acronym styles
 
@@ -1714,7 +1717,6 @@ img, object, embed {
  
  
  
- 
  //homepage isotope elements css
  
  li.isotope-element.one_item {
@@ -1858,17 +1860,16 @@ img, object, embed {
 	  
 	  h2 {
 	      text-transform: uppercase;
-	      font-size: 1.4em;
+	      font-size: 2.5em;
 	      margin-bottom: 0;
-	      font-family: "PT Sans Narrow",'Helvetica Neue',Arial,Helvetica,sans-serif;
+	      font-family: "Nunito",Arial,Helvetica,sans-serif;
 	      letter-spacing: 1px;	
 		   margin-bottom: 0.1em;
-		   line-height: 1.5em;
+		   line-height: 1.0em;
 	  }
 	  
 	  a {
 	      color: #fff;
-		  font-size: 1.5em;
 		  letter-spacing: 1px;
 		  font-weight: 900;
 	      margin-bottom: 1rem;
@@ -1886,12 +1887,12 @@ img, object, embed {
 	    }  
 	  
 	  p {
-	    font-size: 1em;
+	    font-size: 0.9em;
 	    font-style: normal;
 	    text-transform: none;
 		color: #fff;
 		line-height: 1.3em;
-		font-family: "PT Sans Narrow",'Helvetica Neue',Arial,Helvetica,sans-serif;
+		font-family: "Open Sans", sans-serif;
 	  }
 	  
   }
