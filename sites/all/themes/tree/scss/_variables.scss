@@ -80,11 +80,14 @@ $em-base: 16px !default;
 
 // Various global styles
 
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Lato:400,700|Montserrat:400,700|Nunito|Open+Sans:300,400';
+
+
 $default-float: left;
 
  $body-bg: #fff;
  $body-font-color: #222;
- $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $body-font-family: "Open Sans", Arial, sans-serif;
  $body-font-weight: normal;
  $body-font-style: normal;
 
@@ -195,7 +198,7 @@ $default-float: left;
 
 // Control header font styles
 
- $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $header-font-family: "Montserrat", Arial, sans-serif;
  $header-font-weight: bold;
  $header-font-style: normal;
  $header-font-color: #222;
@@ -268,12 +271,12 @@ $default-float: left;
 
 // Style blockquotes
 
-// $blockquote-font-color: lighten($header-font-color, 30%);
-// $blockquote-padding: em-calc(9, 20, 0, 19);
-// $blockquote-border: 1px solid #ddd;
-// $blockquote-cite-font-size: em-calc(13);
-// $blockquote-cite-font-color: lighten($header-font-color, 20%);
-// $blockquote-cite-link-color: $blockquote-cite-font-color;
+  $blockquote-font-color: lighten($header-font-color, 30%);
+  $blockquote-padding: em-calc(9, 20);
+  $blockquote-border: 1px solid #ddd;
+  $blockquote-cite-font-size: em-calc(13);
+  $blockquote-cite-font-color: lighten($header-font-color, 20%);
+  $blockquote-cite-link-color: $blockquote-cite-font-color;
 
 // Acronym styles
 
@@ -1516,8 +1519,9 @@ img, object, embed {
 
 
 */
- 
- 
+
+
+
  
  
  .isotope-element.pack-header { 
@@ -1712,6 +1716,41 @@ img, object, embed {
  
 
  
+ //resources isotope css
+ 
+ 
+
+	
+  //resources h2
+ .content_type {
+     bottom: 0;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     color: #fff;
+     left: 0;
+     background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.46) 100%);
+     background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.46) 100%);
+     padding: 20px;
+     position: absolute;
+     width: 100%;
+     z-index: 1;
+ }
+ 
+ 	 .content_type h2 {
+  
+ 	font-size: 0.9em;
+ 	line-height: 1.36364;
+ 	font-weight: 400;
+ 	color: white;
+ 	text-transform: uppercase;
+ }
+  
+	
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -1858,17 +1897,16 @@ img, object, embed {
 	  
 	  h2 {
 	      text-transform: uppercase;
-	      font-size: 1.4em;
+	      font-size: 2.5em;
 	      margin-bottom: 0;
-	      font-family: "PT Sans Narrow",'Helvetica Neue',Arial,Helvetica,sans-serif;
+	      font-family: "Nunito",Arial,Helvetica,sans-serif;
 	      letter-spacing: 1px;	
 		   margin-bottom: 0.1em;
-		   line-height: 1.5em;
+		   line-height: 1.0em;
 	  }
 	  
 	  a {
 	      color: #fff;
-		  font-size: 1.5em;
 		  letter-spacing: 1px;
 		  font-weight: 900;
 	      margin-bottom: 1rem;
@@ -1886,12 +1924,12 @@ img, object, embed {
 	    }  
 	  
 	  p {
-	    font-size: 1em;
+	    font-size: 0.9em;
 	    font-style: normal;
 	    text-transform: none;
 		color: #fff;
 		line-height: 1.3em;
-		font-family: "PT Sans Narrow",'Helvetica Neue',Arial,Helvetica,sans-serif;
+		font-family: "Open Sans", sans-serif;
 	  }
 	  
   }
@@ -1986,16 +2024,75 @@ img, object, embed {
 
 
 
+.isotope-element.res {
+ 	 width: calc(100% );
+  height: 0;
+ 	 float: left;
+    overflow: hidden;
+    position: relative;
+ 	 margin: 0;
+  padding-bottom: 100%;
+ 	 background-color: white;
+ }
 
 
 
 
 
 
+@media #{$small} {
+
+
+	  .content_type {
+	    padding: 30px 30px calc(34.5px);
+	}
+
+ 
+
+
+
+
+
+}
 
 
 
  @media #{$medium}  { 
+	 
+	 
+	 
+	 //resources isotope
+	 
+	 .isotope-element.res {
+	  	 width: calc(100% / 2);
+	  	 height:300px;
+	  	 float: left;
+	     overflow: hidden;
+	     position: relative;
+	  	 margin: 0;
+	     padding: 0;
+	  	 background-color: white;
+	  }
+	 
+	 
+	
+	  .content_type {
+	      padding: 40px 40px calc(42.3px);
+	  }
+	  
+
+ 	 .content_type h2 {
+	  
+ 	font-size: 0.9em;
+ 	line-height: 1.36364;
+ 	font-weight: 400;
+ 	color: white;
+ 	text-transform: uppercase;
+ }
+	 
+	 
+	 
+	 
 	 
 	 
 	 
@@ -2078,3 +2175,65 @@ img, object, embed {
  
 }
 
+
+// $large:
+
+ @media #{$large} {
+     
+	 
+	 .content_type h2 {
+	  
+	font-size: 0.9em;
+	line-height: 1.36364;
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+}
+	 
+	.content_type {
+	    bottom: 0;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    color: #fff;
+	    left: 0;
+	    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.46) 100%);
+	    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.46) 100%);
+	    padding: 20px;
+	    position: absolute;
+	    width: 100%;
+	    z-index: 1;
+	}
+	 
+	 
+	 
+	 
+	 
+	 .isotope-gutter-sizer {
+		 width: 25%;
+	 }
+	 
+	 
+	 
+	 .isotope-element.res {
+		 width: calc(25%);
+		 height: 230px;
+	  	 float: left;
+	     overflow: hidden;
+	     position: relative;
+	  	 margin: 0;
+	     padding: 0;
+	  	 background-color: white;
+	  }
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+ 
+ //mobile 
+
+
+ 
